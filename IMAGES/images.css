@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+.example{
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid red;
+    min-height: 100vh;
+}
+
+.example img{
+    width: 25%; /* its 25% of container size*/
+    height: auto;
+}
+
+.container{
+    max-width: 800px;
+    margin-inline: auto;
+    background-color: rgb(251, 210, 156);
+    background-image: url("./images/img-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    margin-top: 20px;
+}
+
+.hero{
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:30px;
+    background-color: hsla(0, 0%, 0%, 0.403)
+}
+
+.h1{
+    font-size: 400%;
+    text-shadow: 2px 2px 5px black;
+    color:white;
+}
+.profile-pic-figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px double gray;
+
+}
+
+
+.profile-pic-figure img{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.wrapper{
+    min-height: 100vh;
+    background-color: aliceblue;
+    background-image:url("./images/bubbles.png"),
+    linear-gradient(to left,steelblue, #fff);
+    background-repeat: repeat-y, no-repeat;
+    background-position: right center;
+    background-size: 20%, auto;
+}
+
+.clip-wrapper{
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+.clip{
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url("./images/scenic-2200x1331.png");
+    background-size: 100%;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+
+@media(max-width:800px) {
+    body{
+        background-color: aqua;
+    }
+
+    .profile-pic-figure{
+        height: 140px;
+        width: 140px;
+    }
+
+    .profile-pic-figure img{
+        margin: 0;
+    }
+    .h1 {
+        font-size: 300%;
+    }
+}
+
+@media (max-width:500px) {
+    .profile-pic-figure {
+        height: 80px;
+        width: 80px;
+    }
+
+        .h1 {
+            font-size: 200%;
+        }
+}
